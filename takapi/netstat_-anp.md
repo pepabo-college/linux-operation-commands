@@ -2,9 +2,10 @@
 
 ## netstatとは
 * ネットワーク関連の統計情報を表示する
+* https://linuxjm.osdn.jp/html/net-tools/man8/netstat.8.html
 
-## 構文
-`netstat [option1] [option2]`
+## インストール
+* `yum install net-tools`
 
 ## netstat -anp
 * -a	全てのソケットを表示する
@@ -13,12 +14,10 @@
   * ホスト・ポート・ユーザーなどの名前を解決せずに、数字のアドレスで表示する。
 * -p	各ソケットを利用しているプログラムのプロセスIDを表示する
 
-## どの部分の情報見て出力しているのか？
-/proc/net/dev
-
-## どんな時に使うか？
+## どんなときに使うか？
 
 * リッスンしているポートのプロセスを調べるとき
+* 例：
 
 ````
 netstat -anp | grep 22
@@ -27,16 +26,35 @@ Proto Recv-Q Send-Q Local Address               Foreign Address             Stat
 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      901/sshd
 tcp        0      0 10.0.2.15:22            10.0.2.2:54948          ESTABLISHED 20268/sshd: vagrant
 tcp6       0      0 :::22                   :::*                    LISTEN      901/sshd
-unix  3      [ ]         STREAM     CONNECTED     16622    1330/master
-unix  3      [ ]         STREAM     CONNECTED     13967    622/crond
-unix  2      [ ]         DGRAM                    13981    622/crond
 ````
 
 * LISTENしているポートを実際に見てみる
 
 ````
 ps aux | grep 901
+
 root       901  0.0  0.7  82548  3612 ?        Ss   03:34   0:00 /usr/sbin/sshd -D
 ````
 
 上記のように、`netstat -anp`はリッスンしているポートのプロセスを調べるときに使用する。
+
+## どの情報見て出力しているのか？
+*  `/etc/services` -- サービス名と番号の変換表が入ったファイル
+* `/proc -- proc` ファイルシステムのマウントポイント。 このファイルシステムにより、 以下のファイルを使ってカーネルの統計情報にアクセスできる。
+* `/proc/net/dev` -- デバイスの情報
+* `/proc/net/raw` raw ソケットの情報
+* `/proc/net/tcp` -- TCP ソケットの情報
+* `/proc/net/udp` -- UDP ソケットの情報
+* `/proc/net/igmp` -- IGMP マルチキャストの情報
+* `/proc/net/unix` -- Unix ドメインソケットの情報
+* `/proc/net/ipx` -- IPX ソケットの情報
+* `/proc/net/ax25` -- AX25 ソケットの情報
+* `/proc/net/appletalk` -- DDP (appletalk) ソケットの情報
+* `/proc/net/nr` -- NET/ROM ソケットの情報
+* `/proc/net/route` -- IP 経路情報
+* `/proc/net/ax25_route` -- AX25 経路情報
+* `/proc/net/ipx_route` -- IPX 経路情報
+* `/proc/net/nr_nodes` -- NET/ROM ノードリスト
+* `/proc/net/nr_neigh` -- NET/ROM ネイバー (neighbour)
+* `/proc/net/ip_masquerade` -- マスカレード接続
+* `/proc/net/snmp` -- 統計情報
