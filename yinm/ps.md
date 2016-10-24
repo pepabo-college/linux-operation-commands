@@ -5,46 +5,27 @@
 * u: ユーザー指向のフォーマット（加工の容易さよりも読みやすさを優先したフォーマット）で表示する
 * f: 階層表示する
 
-
 ## カラムの意味
 ### USER
 * ユーザID
-*
-
-
 
 ### PID
 * プロセスID
-*
-
 
 ### %CPU
 * CPU使用率
-*
-
 
 ### %MEM
 * 実メモリ使用量
-*
-
-
 
 ### VSZ
 * 仮想メモリの使用サイズ(キロバイト表示)
-*
-
-
 
 ### RSS
 * 物理メモリの使用サイズ(キロバイト表示)
-*
-
 
 ### TTY
 * 使用端末
-*
-
-
 
 ### STAT
 * プロセスのステータス
@@ -60,31 +41,20 @@
   * +: フォアグラウンドのプロセスグループに入っている
   * T: 停止中
 
-
 ### START
 * プロセスの開始時刻
-*
-
 
 ### TIME
 * プロセスの総実行時間(CPUの累積使用時間)
 
-
 ### COMMAND
 * 実行コマンド名とパス（シェル表記の場合もあり）
 
-
-## []の意味
+##  COMMANDカラムの[]の意味
 * [] が付くプロセスは、カーネルモード（特権モード）で動作するプロセス。
 * それ以外は、ユーザモードで動作するプロセス。
 
-
 ## 参考文献
-* (http://qiita.com/shell/items/68ed71a7f018e5688f73)
-* (http://www.itmedia.co.jp/help/tips/linux/l0158.html)
-* (http://www.turbolinux.com/support/document/knowledge/556.html)
-
-
-
-
-
+* [psコマンドまとめ](http://qiita.com/shell/items/68ed71a7f018e5688f73)
+* [「ps aux」コマンドで表示される項目の意味を知りたい](http://www.itmedia.co.jp/help/tips/linux/l0158.html)
+* [psコマンドでの[]付き表示について](http://www.turbolinux.com/support/document/knowledge/556.html)
