@@ -8,6 +8,14 @@
 
 - `vmstat` で実行
 
+## 実行例
+
+```
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  0  40236 138512      0 294556    2    4    20    22   36   69  0  0 100  0  0
+```
+
 ### 出力情報の意味
 
 メモリの単位はキロバイト。
