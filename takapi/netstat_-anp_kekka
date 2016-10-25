@@ -1,0 +1,195 @@
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:58792           0.0.0.0:*               LISTEN      3809/rpc.statd      
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      3811/rpcbind        
+tcp        0      0 0.0.0.0:53810           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      905/sshd            
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1414/master         
+tcp        0      0 10.0.2.15:22            10.0.2.2:54789          ESTABLISHED 4170/sshd: vagrant  
+tcp        0      0 10.0.2.15:22            10.0.2.2:54948          ESTABLISHED 4308/sshd: vagrant  
+tcp6       0      0 :::111                  :::*                    LISTEN      3811/rpcbind        
+tcp6       0      0 :::80                   :::*                    LISTEN      908/httpd           
+tcp6       0      0 :::59635                :::*                    LISTEN      3809/rpc.statd      
+tcp6       0      0 :::22                   :::*                    LISTEN      905/sshd            
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1414/master         
+tcp6       0      0 :::37405                :::*                    LISTEN      -                   
+udp        0      0 127.0.0.1:1017          0.0.0.0:*                           3809/rpc.statd      
+udp        0      0 0.0.0.0:1018            0.0.0.0:*                           3811/rpcbind        
+udp        0      0 0.0.0.0:16132           0.0.0.0:*                           622/dhclient        
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           622/dhclient        
+udp        0      0 0.0.0.0:34888           0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:59465           0.0.0.0:*                           3809/rpc.statd      
+udp        0      0 0.0.0.0:111             0.0.0.0:*                           3811/rpcbind        
+udp6       0      0 :::33688                :::*                                3809/rpc.statd      
+udp6       0      0 :::60619                :::*                                -                   
+udp6       0      0 :::1018                 :::*                                3811/rpcbind        
+udp6       0      0 :::64109                :::*                                622/dhclient        
+udp6       0      0 :::111                  :::*                                3811/rpcbind        
+raw        0      0 0.0.0.0:1               0.0.0.0:*               7           4344/ping           
+raw6       0      0 :::58                   :::*                    7           599/NetworkManager  
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name     Path
+unix  2      [ ACC ]     STREAM     LISTENING     16790    1414/master          private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     13063    1/systemd            /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     16796    1414/master          private/error
+unix  2      [ ACC ]     STREAM     LISTENING     16799    1414/master          private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     13066    1/systemd            /var/run/rpcbind.sock
+unix  2      [ ACC ]     STREAM     LISTENING     16802    1414/master          private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     16805    1414/master          private/local
+unix  2      [ ACC ]     STREAM     LISTENING     16808    1414/master          private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     16760    1414/master          private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     16749    1414/master          public/pickup
+unix  2      [ ACC ]     STREAM     LISTENING     16753    1414/master          public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     16756    1414/master          public/qmgr
+unix  2      [ ACC ]     STREAM     LISTENING     16763    1414/master          private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     10779    1/systemd            /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     16811    1414/master          private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     16766    1414/master          private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     16814    1414/master          private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     16817    1414/master          private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     15680    1000/nagios          /usr/local/nagios/var/rw/nagios.qh
+unix  2      [ ACC ]     STREAM     LISTENING     13610    599/NetworkManager   /var/run/NetworkManager/private
+unix  2      [ ACC ]     STREAM     LISTENING     13872    599/NetworkManager   /var/run/NetworkManager/private-dhcp
+unix  2      [ ]         DGRAM                    10812    1/systemd            /run/systemd/shutdownd
+unix  2      [ ACC ]     STREAM     LISTENING     13933    619/gssproxy         /var/lib/gssproxy/default.sock
+unix  2      [ ACC ]     STREAM     LISTENING     16769    1414/master          private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     16772    1414/master          private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     16775    1414/master          private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     13934    619/gssproxy         /run/gssproxy.sock
+unix  2      [ ACC ]     STREAM     LISTENING     16781    1414/master          private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     16784    1414/master          private/proxywrite
+unix  2      [ ACC ]     STREAM     LISTENING     16787    1414/master          private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     10875    1/systemd            /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     SEQPACKET  LISTENING     10886    1/systemd            /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     10896    1/systemd            /run/lvm/lvmpolld.socket
+unix  2      [ ]         DGRAM                    6600     1/systemd            /run/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     16778    1414/master          public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     16793    1414/master          public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     6611     1/systemd            /run/systemd/journal/stdout
+unix  5      [ ]         DGRAM                    6614     1/systemd            /run/systemd/journal/socket
+unix  17     [ ]         DGRAM                    6616     1/systemd            /dev/log
+unix  2      [ ]         STREAM     CONNECTED     21043    -                    
+unix  2      [ ]         DGRAM                    14004    622/dhclient         
+unix  3      [ ]         STREAM     CONNECTED     13558    619/gssproxy         
+unix  3      [ ]         STREAM     CONNECTED     16804    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13927    618/polkitd          
+unix  3      [ ]         STREAM     CONNECTED     16800    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16791    1414/master          
+unix  2      [ ]         DGRAM                    22061    4195/sudo            
+unix  3      [ ]         STREAM     CONNECTED     13261    596/systemd-logind   
+unix  3      [ ]         STREAM     CONNECTED     16771    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16765    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13481    600/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     14940    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15236    908/httpd            
+unix  3      [ ]         STREAM     CONNECTED     16818    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13938    -                    
+unix  2      [ ]         DGRAM                    12971    571/auditd           
+unix  3      [ ]         STREAM     CONNECTED     16815    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16761    1414/master          
+unix  2      [ ]         DGRAM                    13602    599/NetworkManager   
+unix  3      [ ]         STREAM     CONNECTED     15878    1000/nagios          
+unix  3      [ ]         STREAM     CONNECTED     16411    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     13395    451/systemd-journal  /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    22099    4196/su              
+unix  3      [ ]         STREAM     CONNECTED     13263    1/systemd            
+unix  3      [ ]         STREAM     CONNECTED     13716    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     11916    483/lvmetad          
+unix  3      [ ]         STREAM     CONNECTED     16797    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16777    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16225    906/python           
+unix  3      [ ]         STREAM     CONNECTED     16757    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13483    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16803    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16768    1414/master          
+unix  2      [ ]         DGRAM                    20678    3809/rpc.statd       
+unix  3      [ ]         STREAM     CONNECTED     15682    1023/nagios          
+unix  3      [ ]         STREAM     CONNECTED     13262    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15686    1025/nagios          
+unix  3      [ ]         STREAM     CONNECTED     13928    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16812    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     21996    4172/sshd: vagrant@  
+unix  3      [ ]         STREAM     CONNECTED     15194    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16807    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     14187    638/crond            
+unix  3      [ ]         STREAM     CONNECTED     16762    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13909    620/wpa_supplicant   
+unix  3      [ ]         STREAM     CONNECTED     16788    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16782    1414/master          
+unix  2      [ ]         DGRAM                    16719    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     11917    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16798    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     15688    1024/nagios          
+unix  3      [ ]         STREAM     CONNECTED     15685    1000/nagios          /usr/local/nagios/var/rw/nagios.qh
+unix  3      [ ]         STREAM     CONNECTED     16750    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     22816    4310/sshd: vagrant@  
+unix  3      [ ]         STREAM     CONNECTED     16794    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     11961    484/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     13482    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     13868    620/wpa_supplicant   
+unix  3      [ ]         STREAM     CONNECTED     16789    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16809    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13217    599/NetworkManager   
+unix  3      [ ]         STREAM     CONNECTED     16767    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13613    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     21997    4170/sshd: vagrant   
+unix  2      [ ]         DGRAM                    11257    1/systemd            
+unix  3      [ ]         STREAM     CONNECTED     13910    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    13823    619/gssproxy         
+unix  3      [ ]         STREAM     CONNECTED     16813    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     15193    905/sshd             
+unix  3      [ ]         STREAM     CONNECTED     16785    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     14188    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13218    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16773    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13559    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16226    600/dbus-daemon      /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    13746    600/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     16816    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16806    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13715    599/NetworkManager   
+unix  2      [ ]         DGRAM                    16923    1421/qmgr            
+unix  2      [ ]         DGRAM                    13440    596/systemd-logind   
+unix  3      [ ]         STREAM     CONNECTED     16783    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     15689    1000/nagios          /usr/local/nagios/var/rw/nagios.qh
+unix  3      [ ]         STREAM     CONNECTED     16747    1414/master          
+unix  2      [ ]         DGRAM                    22813    4308/sshd: vagrant   
+unix  3      [ ]         STREAM     CONNECTED     15684    1022/nagios          
+unix  3      [ ]         STREAM     CONNECTED     16795    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16755    1414/master          
+unix  3      [ ]         DGRAM                    11995    484/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     16751    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16779    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     15683    1000/nagios          /usr/local/nagios/var/rw/nagios.qh
+unix  3      [ ]         STREAM     CONNECTED     11962    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16770    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13612    599/NetworkManager   
+unix  2      [ ]         DGRAM                    13930    618/polkitd          
+unix  3      [ ]         STREAM     CONNECTED     16810    1414/master          
+unix  2      [ ]         DGRAM                    15646    1000/nagios          
+unix  3      [ ]         STREAM     CONNECTED     13446    596/systemd-logind   
+unix  3      [ ]         STREAM     CONNECTED     16801    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13480    600/dbus-daemon      
+unix  2      [ ]         DGRAM                    14210    638/crond            
+unix  3      [ ]         STREAM     CONNECTED     16774    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16764    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16819    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     13945    619/gssproxy         /run/gssproxy.sock
+unix  3      [ ]         STREAM     CONNECTED     13869    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16786    1414/master          
+unix  2      [ ]         DGRAM                    21993    4170/sshd: vagrant   
+unix  3      [ ]         STREAM     CONNECTED     15237    451/systemd-journal  /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15687    1000/nagios          /usr/local/nagios/var/rw/nagios.qh
+unix  3      [ ]         STREAM     CONNECTED     16758    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16410    1195/VBoxService     
+unix  3      [ ]         DGRAM                    11994    484/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     13394    600/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     15877    1000/nagios          
+unix  3      [ ]         STREAM     CONNECTED     16748    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     22817    4308/sshd: vagrant   
+unix  3      [ ]         STREAM     CONNECTED     16776    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16754    1414/master          
+unix  2      [ ]         DGRAM                    11975    484/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     14939    906/python           
+unix  3      [ ]         STREAM     CONNECTED     16792    1414/master          
+unix  3      [ ]         STREAM     CONNECTED     16780    1414/master          
+unix  2      [ ]         DGRAM                    47035    16885/pickup
