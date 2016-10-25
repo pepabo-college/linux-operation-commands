@@ -1,4 +1,85 @@
 # ps
+## 実行結果
+```
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         2  0.0  0.0      0     0 ?        S    05:51   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [kworker/u2:0]
+root         7  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [migration/0]
+root         8  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [rcuob/0]
+root        10  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [rcu_sched]
+root        11  0.0  0.0      0     0 ?        R    05:51   0:00  \_ [rcuos/0]
+root        12  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [khelper]
+root        14  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [kdevtmpfs]
+root        15  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [netns]
+root        16  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [perf]
+root        17  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [writeback]
+root        18  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kintegrityd]
+root        19  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [bioset]
+root        20  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kblockd]
+root        21  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [md]
+root        26  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [khungtaskd]
+root        27  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [kswapd0]
+root        28  0.0  0.0      0     0 ?        SN   05:51   0:00  \_ [ksmd]
+root        29  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [fsnotify_mark]
+root        30  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [crypto]
+root        38  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kthrotld]
+root        40  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kmpath_rdacd]
+root        41  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kpsmoused]
+root        42  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [ipv6_addrconf]
+root        62  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [deferwq]
+root        92  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [kauditd]
+root       253  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [ata_sff]
+root       257  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [scsi_eh_0]
+root       261  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [scsi_tmf_0]
+root       262  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [scsi_eh_1]
+root       265  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [scsi_tmf_1]
+root       283  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kworker/0:1H]
+root       343  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kdmflush]
+root       344  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [bioset]
+root       353  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [kdmflush]
+root       354  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [bioset]
+root       369  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfsalloc]
+root       370  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs_mru_cache]
+root       371  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-buf/dm-0]
+root       372  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-data/dm-0]
+root       373  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-conv/dm-0]
+root       374  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-cil/dm-0]
+root       375  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-reclaim/dm-]
+root       376  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-log/dm-0]
+root       377  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-eofblocks/d]
+root       378  0.0  0.0      0     0 ?        R    05:51   0:04  \_ [xfsaild/dm-0]
+root       469  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [rpciod]
+root       548  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-buf/sda2]
+root       550  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-data/sda2]
+root       551  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-conv/sda2]
+root       552  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-cil/sda2]
+root       553  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-reclaim/sda]
+root       554  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-log/sda2]
+root       555  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [xfs-eofblocks/s]
+root       557  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [xfsaild/sda2]
+root      3209  0.0  0.0      0     0 ?        S<   05:51   0:00  \_ [nfsiod]
+root      3214  0.0  0.0      0     0 ?        S    05:51   0:00  \_ [lockd]
+root      3370  0.0  0.0      0     0 ?        S    06:06   0:00  \_ [kworker/u2:1]
+root      4339  0.0  0.0      0     0 ?        S    09:10   0:00  \_ [kworker/0:2]
+root      4382  0.0  0.0      0     0 ?        S    09:20   0:00  \_ [kworker/0:0]
+root      4494  0.0  0.0      0     0 ?        S    09:28   0:00  \_ [kworker/0:1]
+root         1  0.0  2.3  43896  5652 ?        Ss   05:51   0:01 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+root       450  0.0  1.0  32720  2500 ?        Ss   05:51   0:00 /usr/lib/systemd/systemd-journald
+root       474  0.0  0.8 129132  2156 ?        Ss   05:51   0:00 /usr/sbin/lvmetad -f
+root       476  0.0  1.1  45740  2676 ?        Ss   05:51   0:00 /usr/lib/systemd/systemd-udevd
+root       577  0.0  0.5  51188  1324 ?        S<sl 05:51   0:00 /sbin/auditd -n
+root       599  0.0  1.0 283324  2488 ?        Ssl  05:51   0:00 /usr/sbin/rsyslogd -n
+dbus       602  0.0  0.6  34960  1460 ?        Ssl  05:51   0:00 /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --sys
+chrony     604  0.0  0.5 100648  1360 ?        S    05:51   0:00 /usr/sbin/chronyd
+root       609  0.0  0.3 203368   904 ?        Ssl  05:51   0:00 /usr/sbin/gssproxy -D
+root       614  0.0  0.6  26400  1536 ?        Ss   05:51   0:00 /usr/lib/systemd/systemd-logind
+root       622  0.0  2.0 508564  4956 ?        Ssl  05:51   0:00 /usr/sbin/NetworkManager --no-daemon
+```
+
 ## axufオプション
 * a: 端末を持つ全てのプロセスを表示する
 * x: 端末を持たない全てのプロセスを表示する
